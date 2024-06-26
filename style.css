@@ -26,7 +26,13 @@ h4 {
     font-variation-settings: "wght" 700;
     color: #FFFFFF;
 }
-
+h5 {
+    font-family: "Cantarell var", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+    font-size: 14px;
+    color: #939393;
+}
 p {
     font-family: "Cantarell var", sans-serif;
     font-variation-settings: "wght" 350;
@@ -77,6 +83,13 @@ a {
     position: relative;
     max-width: 950px;
     top: 35px;
+}
+
+.description {
+    margin: 0 auto;
+    position: relative;
+    max-width: 950px;
+    top: 38px;
 }
 
 .box {
@@ -159,7 +172,7 @@ a {
         margin-right: 0;
     }
 
-    .title, .box {
+    .title, .description, .box {
         padding: 0 15px;
     }
 
