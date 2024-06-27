@@ -163,8 +163,7 @@ a {
 
     .nav li {
         display: inline-block;
-        margin: 0 0px;
-        margin-bottom: -15px;
+        margin: 0;
     }
 
     .nav a {
