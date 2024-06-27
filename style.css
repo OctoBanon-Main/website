@@ -45,12 +45,12 @@ a {
     font-variation-settings: "wght" 600;
 }
 
-.about-me {
+.about-me, .about-title {
     color: #FFFFFF;
     margin: 0 auto;
     position: relative;
     max-width: 950px;
-    top: 35px;
+    top: 25px;
 }
 
 .nav {
@@ -86,14 +86,7 @@ a {
     background-color: #3A3A3A;
 }
 
-.title {
-    margin: 0 auto;
-    position: relative;
-    max-width: 950px;
-    top: 35px;
-}
-
-.description {
+.title, .description {
     margin: 0 auto;
     position: relative;
     max-width: 950px;
@@ -102,7 +95,7 @@ a {
 
 .box {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 45px;
     max-width: 950px;
 }
 
@@ -185,7 +178,7 @@ a {
         margin-right: 0;
     }
 
-    .title, .description, .box, .about-me {
+    .title, .description, .box, .about-me, .about-title {
         padding: 0 15px;
     }
 
