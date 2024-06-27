@@ -148,13 +148,6 @@ a {
         font-size: 14px;
     }
 
-
-    body {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-    
     .nav {
         position: fixed;
         bottom: 0;
