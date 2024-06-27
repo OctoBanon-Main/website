@@ -148,6 +148,10 @@ a {
         font-size: 14px;
     }
 
+    body {
+        padding-bottom: 70px;
+    }
+
     .nav {
         position: fixed;
         bottom: 0;
