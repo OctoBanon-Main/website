@@ -45,13 +45,14 @@ a {
     font-variation-settings: "wght" 600;
 }
 
-.about-me, .about-title {
+.about-title, .about-me {
     color: #FFFFFF;
     margin: 0 auto;
     position: relative;
     max-width: 950px;
-    top: 25px;
+    top: 30px;
 }
+
 
 .nav {
     list-style: none;
