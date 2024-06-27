@@ -144,6 +144,8 @@ a {
 
     body {
         padding-bottom: 70px;
+        margin: 0;
+        overflow-x: hidden;
     }
 
     .nav {
