@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Cantarell var";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: "Regular";
+    src: url("./Cantarell-VF.woff2") format("woff2"),
+      url("./Cantarell-VF.otf") format("opentype");
+}
+
+* {
+    background-color: #242424;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Cantarell var", sans-serif;
+    font-weight: 800;
+    font-variation-settings: "wght" 800;
+}
+
+p {
+    font-family: "Cantarell var", sans-serif;
+    font-weight: 500;
+    font-variation-settings: "wght" 500;
+}
+
+body {
+    margin: auto;
+    width: 650px;
+    padding: 300px;
+    color: #FFFFFF;    
+}
