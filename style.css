@@ -150,10 +150,11 @@ a {
 
     .nav {
         position: fixed;
-        bottom: -20px;
+        bottom: 0px;
         left: 0;
         width: 100%;
         text-align: center;
+        padding: 10px 0 calc(10px + env(safe-area-inset-bottom));
         padding: 10px 0;
         z-index: 1050;
         background-color: #242424;
