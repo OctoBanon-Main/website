@@ -33,6 +33,7 @@ h5 {
     font-size: 14px;
     color: #939393;
 }
+
 p {
     font-family: "Cantarell var", sans-serif;
     font-variation-settings: "wght" 350;
@@ -92,6 +93,24 @@ a {
     position: relative;
     max-width: 950px;
     top: 38px;
+}
+
+.info {
+    margin: 0 auto;
+    position: relative;
+    max-width: 950px;
+    top: 35px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.credits {
+    margin: 0 auto;
+    position: relative;
+    max-width: 950px;
+    top: 35px;
+    font-size: 14px;
+    color: #929292;
 }
 
 .box {
@@ -154,7 +173,7 @@ a {
         max-width: 90%;
     }
 
-    .about-title, .about-me, .title, .description {
+    .about-title, .about-me, .title, .description, .info, .credits {
         max-width: 90%;
         padding: 0 15px;
     }
@@ -209,7 +228,7 @@ a {
         margin-right: 0;
     }
 
-    .title, .description, .box, .about-me, .about-title {
+    .title, .description, .box, .about-me, .about-title, .info, .credits {
         padding: 0 15px;
     }
 
