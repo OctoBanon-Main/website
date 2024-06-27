@@ -100,7 +100,7 @@ a {
     max-width: 950px;
 }
 
-.element-row {
+.row, .item {
     background-color: #363636;
     display: flex;
     text-decoration: none;
@@ -110,27 +110,42 @@ a {
     padding: 16px;
     transition: background-color 0.3s;
     border-bottom: 1px solid #232323;
-
 }
 
-.element-row:first-child {
+.row:first-child {
     border-radius: 12px 12px 0 0;
 }
 
-.element-row:last-child {
+.row:last-child {
     border-radius: 0 0 12px 12px;
     border-bottom: none;
 }
 
-.element-row:hover {
+.row:hover {
     background-color: #3C3C3C;
 }
 
-.element-row p {
+.row p {
     margin: 0;
 }
 
-.element-row img {
+.row img {
+    margin-right: 8px;
+}
+
+.item {
+    border-radius: 12px;
+}
+
+.item:hover {
+    background-color: #3C3C3C;
+}
+
+.item p {
+    margin: 0;
+}
+
+.item img {
     margin-right: 8px;
 }
 
@@ -188,13 +203,13 @@ a {
         padding: 0 15px;
     }
 
-    .element-row {
+    .row, .item {
         flex-direction: row;
         align-items: flex-start;
         padding: 18px;
     }
 
-    .element-row img {
+    .row, .item img {
         margin-bottom: 0;
         margin-right: 8px;
     }
