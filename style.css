@@ -120,7 +120,7 @@ a {
     max-width: 950px;
 }
 
-.row, .item {
+.row, {
     background-color: #363636;
     display: flex;
     text-decoration: none;
@@ -153,28 +153,12 @@ a {
     margin-right: 8px;
 }
 
-.item {
-    border-radius: 12px;
-}
-
-.item:hover {
-    background-color: #3C3C3C;
-}
-
-.item p {
-    margin: 0;
-}
-
-.item img {
-    margin-right: 8px;
-}
-
 @media (max-width: 980px) {
     .box {
         max-width: 90%;
     }
 
-    .about-title, .about-me, .title, .description, .info, .credits {
+    .about-title, .about-me, .title, .description, .credits {
         max-width: 90%;
         padding: 0 15px;
     }
@@ -233,13 +217,13 @@ a {
         padding: 0 15px;
     }
 
-    .row, .item {
+    .row {
         flex-direction: row;
         align-items: flex-start;
         padding: 18px;
     }
 
-    .row, .item img {
+    .row, img {
         margin-bottom: 0;
         margin-right: 8px;
     }
