@@ -158,7 +158,7 @@ a {
         max-width: 90%;
     }
 
-    .about-title, .about-me, .title, .description, .credits {
+    .about-title, .about-me, .title, .description, .info, .credits {
         max-width: 90%;
         padding: 0 15px;
     }
