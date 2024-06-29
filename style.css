@@ -120,7 +120,7 @@ a {
     max-width: 950px;
 }
 
-.row, {
+.row {
     background-color: #363636;
     display: flex;
     text-decoration: none;
