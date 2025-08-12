@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!--# echo var="status" --></title>
+    <link rel="stylesheet" href="css/errors_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><!--# echo var="status" --></h1>
+        <p>
+            <!--# if expr="$status = 404" -->
+            Sorry, the page you are looking for cannot be found.
+            <!--# elif expr="$status = 403" -->
+            Sorry, the page you are looking for cannot be acceessed by a normal user.
+            <!--# elif expr="$status = /4\d\d/" -->
+            Your browser sent a request that the server was unable
+            to process.
+            <!--# elif expr="$status = /5\d\d/" -->
+            The server encountered an error and could not complete
+            your request. Please try again later.
+            <!--# else -->
+            Something went wrong while trying to display this page.
+            Please try again later.
+            <!--# endif -->
+        </p>
+        <div class="button-container">
+            <a href="https://devbutlazy.xyz" class="button">Back Home</a>
+            <a href="https://t.me/blogbutlazy" class="button">Telegram Channel</a>
+        </div>
+    </div>
+</body>
+</html>
