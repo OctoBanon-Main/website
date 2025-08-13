@@ -3,14 +3,18 @@ import Link from "next/link";
 
 type SectionProps = {
     text: string;
+    href: string;
 };
 
-function BoxSection({ text }: SectionProps) {
+function BoxSection({ text, href }: SectionProps) {
     return (
-        <li className="bg-[#363636] border-b flex cursor-pointer hover:bg-[#3C3C3C] transition-colors duration-150 flex-row justify-between items-center border-b-[#232323] last:border-none last:rounded-b-xl first:rounded-t-xl p-[16px]">
+        <Link
+            href={href}
+            className="bg-[#363636] border-b flex cursor-pointer hover:bg-[#3C3C3C] transition-colors duration-150 flex-row justify-between items-center border-b-[#232323] last:border-none last:rounded-b-xl first:rounded-t-xl p-[16px]"
+        >
             {text}
             <img src="/link.svg" className="mr-1" />
-        </li>
+        </Link>
     );
 }
 
@@ -27,29 +31,29 @@ export default function Home() {
                 <h1 className="mt-3 font-bold text-lg">Socials</h1>
                 <p className="text-neutral-400 text-sm">Here are all my social networks</p>
                 <ul className="list-none mt-1.5">
-                    <BoxSection text="X" />
-                    <BoxSection text="Mastodon" />
-                    <BoxSection text="GitHub" />
-                    <BoxSection text="Steam" />
+                    <BoxSection href="https://x.com/OctoBanon" text="X" />
+                    <BoxSection href="https://mastodon.ml/@octobanon" text="Mastodon" />
+                    <BoxSection href="https://github.com/OctoBanon-Main" text="GitHub" />
+                    <BoxSection href="https://steamcommunity.com/id/octobanon" text="Steam" />
                 </ul>
                 <h1 className="mt-3 font-bold text-lg">Contacts</h1>
                 <p className="text-neutral-400 text-sm">Here are several ways to reach me out</p>
                 <ul className="list-none mt-1.5">
-                    <BoxSection text="E-Mail" />
-                    <BoxSection text="Telegram" />
-                    <BoxSection text="Matrix" />
-                    <BoxSection text="Discord" />
+                    <BoxSection href="mailto:me@octobanon.com" text="E-Mail" />
+                    <BoxSection href="https://t.me/OctoBanon" text="Telegram" />
+                    <BoxSection href="https://matrix.to/#/@me:octobanon.com" text="Matrix" />
+                    <BoxSection href="https://discord.com/users/839947810735521792" text="Discord" />
                 </ul>
                 <h1 className="mt-3 font-bold text-lg">Friends websites :3</h1>
                 <p className="text-neutral-400 text-sm">
                     <Link href="/fof.gif">:3</Link>
                 </p>
                 <ul className="list-none mt-1.5">
-                    <BoxSection text="kostya_zero" />
-                    <BoxSection text="Houl" />
-                    <BoxSection text="kiber_ogur4ik" />
-                    <BoxSection text="HonakAC" />
-                    <BoxSection text="cat8753" />
+                    <BoxSection href="https://kostyazero.com/" text="kostya_zero" />
+                    <BoxSection href="https://houl.floof.company/" text="Houl" />
+                    <BoxSection href="https://kiber-ogur4ik.space/" text="kiber_ogur4ik" />
+                    <BoxSection href="https://honakac.github.io/" text="HonakAC" />
+                    <BoxSection href="https://patrickstar8753.github.io/" text="cat8753" />
                 </ul>
                 <h1 className="mt-3 font-bold text-lg">
                     Made by <Link href="https://kostyazero.com">kostya_zero</Link>
