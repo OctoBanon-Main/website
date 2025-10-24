@@ -3,6 +3,7 @@
 **This repository contains the source code for my personal website.**
 
 > Maded by [kostya_zero](https://github.com/kostya-zero). 
+
 > The old HTML/CSS version is available in ["archive/html-css"](https://github.com/OctoBanon-Main/website/tree/archive/html-css) branch.
 
 ## Tech Stack
