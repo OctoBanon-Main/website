@@ -6,10 +6,3 @@ export const adwaitaSans = localFont({
   style: "normal",
   variable: "--font-adwaita-sans",
 });
-
-export const adwaitaMono = localFont({
-  src: "../../public/fonts/AdwaitaMono-Regular.ttf",
-  weight: "400",
-  style: "normal",
-  variable: "--font-adwaita-mono",
-});

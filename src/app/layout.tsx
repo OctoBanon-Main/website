@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { adwaitaSans, adwaitaMono } from "./fonts";
+import { adwaitaSans } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
