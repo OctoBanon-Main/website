@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${adwaitaSans.variable} ${adwaitaMono.variable} dark antialiased min-h-[100dvh]`}>{children}</body>
+            <body className={`${adwaitaSans.variable} dark antialiased min-h-[100dvh]`}>{children}</body>
         </html>
     );
 }
