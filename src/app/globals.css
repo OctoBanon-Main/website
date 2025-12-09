@@ -8,18 +8,28 @@
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-inter);
+
+    --font-sans: var(--font-adwaita-sans);
+
+    --font-mono: var(--font-adwaita-mono);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #242424;
-        --foreground: #ededed;
+        --background: hsl(240, 5.56%, 14.12%);
+        --foreground: hsl(0, 0%, 100%);
+        --box-background: hsl(240, 3.77%, 20.78%);
+        --box-background-hover: hsl(240, 3.39%, 23.14%);
+        --navbar-bg: hsl(240, 2.56%, 22.94%);
     }
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: "Inter", Helvetica, sans-serif;
+    font-family: var(--font-adwaita-sans), Helvetica, sans-serif;
+}
+
+code, pre {
+    font-family: var(--font-adwaita-mono), monospace;
 }

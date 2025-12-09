@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { adwaitaSans, adwaitaMono } from "./fonts";
 import "./globals.css";
-
-const inter = Inter({
-    variable: "--font-inter",
-    subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
     title: "OctoBanon's Website",
@@ -19,7 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} dark antialiased min-h-[100dvh]`}>{children}</body>
+            <body className={`${adwaitaSans.variable} ${adwaitaMono.variable} dark antialiased min-h-[100dvh]`}>{children}</body>
         </html>
     );
 }
