@@ -57,9 +57,9 @@ export default function Home() {
                     <BoxSection href="https://shadowcj.rf.gd/" text="ShadowCj" />
                     <BoxSection href="https://tolya1337.ru/" text="Tolya Gosuslugi" />
                 </ul>
-                <h1 className="mt-3 text-sm">
+                <p className="mt-3 text-sm">
                     Made by kostya_zero
-                </h1>
+                </p>
                 <p className="text-neutral-400 text-sm">
                     Original idea by OctoBanon <br /> Used fonts: Adwaita Sans <br /> Inspired by GTK and Adwaita style
                 </p>
