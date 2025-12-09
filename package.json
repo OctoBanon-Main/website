@@ -1,5 +1,7 @@
 {
-  "name": "octo",
+  "name": "octobanon-website",
+  "description": "Personal website with information about me",
+  "license": "AGPL-3.0-only",
   "version": "0.1.0",
   "private": true,
   "scripts": {
