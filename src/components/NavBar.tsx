@@ -21,7 +21,7 @@ function Section({ icon, href, text, isActive = false }: Props) {
 
 export default function NavBar() {
     return (
-        <header className="fixed lg:relative bottom-0 left-0 right-0 lg:bg-background bg-background py-[10px] z-50">
+        <header className="fixed lg:relative bottom-0 left-0 right-0 lg:bg-background bg-background py-[10px] z-50 navbar-shadow lg:shadow-none">
             <ul className="flex flex-row gap-1 mx-auto justify-center">
                 <Section text="Home" icon={"/home.svg"} isActive href="/" />
                 <Section text="Status" icon={"/status.svg"} href="https://status.octobanon.com/status/services" />
