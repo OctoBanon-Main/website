@@ -10,7 +10,7 @@ function BoxSection({ text, href }: SectionProps) {
     return (
         <Link
             href={href}
-            className="bg-[#333337] border-b flex cursor-pointer hover:bg-[#39393D] transition-colors duration-150 flex-row justify-between items-center border-b-[#212125] last:border-none last:rounded-b-xl first:rounded-t-xl p-[16px]"
+            className="bg-[#333337] border-b flex cursor-pointer hover:bg-[#39393D] transition-colors duration-150 flex-row justify-between text-[1em] items-center border-b-[#212125] last:border-none last:rounded-b-xl first:rounded-t-xl p-[16px]"
         >
             {text}
             <img src="/link.svg" className="mr-1" />
@@ -28,7 +28,7 @@ export default function Home() {
                     Hi! I&apos;m Maksim — a 19-year-old developer and system administrator from{" "}
                     <Link href="/yaycha.gif">Russia</Link>. Currently focusing on Rust (already comfortable with the basics) and Kotlin (actively learning).
                 </p>
-                <h1 className="mt-3 font-bold text-sm">Socials</h1>
+                <h1 className="mt-6 font-bold text-sm">Socials</h1>
                 <p className="text-neutral-400 text-sm">Here are all my social networks</p>
                 <ul className="list-none mt-1.5">
                     <BoxSection href="https://x.com/OctoBanon" text="X" />
@@ -37,7 +37,7 @@ export default function Home() {
                     <BoxSection href="https://steamcommunity.com/id/octobanon" text="Steam" />
                     <BoxSection href="https://t.me/octobanon_place" text="Telegram Channel (RU)" />
                 </ul>
-                <h1 className="mt-3 font-bold text-sm">Contacts</h1>
+                <h1 className="mt-6 font-bold text-sm">Contacts</h1>
                 <p className="text-neutral-400 text-sm">Here are several ways to reach me out</p>
                 <ul className="list-none mt-1.5">
                     <BoxSection href="mailto:me@octobanon.com" text="E-Mail" />
@@ -45,7 +45,7 @@ export default function Home() {
                     <BoxSection href="https://matrix.to/#/@me:octobanon.com" text="Matrix" />
                     <BoxSection href="https://discord.com/users/839947810735521792" text="Discord" />
                 </ul>
-                <h1 className="mt-3 font-bold text-sm">Friends websites</h1>
+                <h1 className="mt-6 font-bold text-sm">Friends websites</h1>
                 <p className="text-neutral-400 text-sm">
                     <Link href="/fof.gif">:3</Link>
                 </p>
@@ -57,7 +57,7 @@ export default function Home() {
                     <BoxSection href="https://shadowcj.rf.gd/" text="ShadowCj" />
                     <BoxSection href="https://tolya1337.ru/" text="Tolya Gosuslugi" />
                 </ul>
-                <p className="mt-3 text-sm">
+                <p className="mt-10 text-sm">
                     Made by kostya_zero
                 </p>
                 <p className="text-neutral-400 text-sm">
