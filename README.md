@@ -43,14 +43,14 @@ pnpm start
 
 ### Deploy
 
-This project can be deployed on any platform that supports Next.js, including:
+This homepage can be deployed on any platform that supports Next.js, including:
 
 - Vercel (recommended)
 - Netlify
 - Any Node.js hosting environment
 - Self-hosted VPS (Node.js server)
 
-The project does not require any special configuration for deployment.
+The homepage does not require any special configuration for deployment.  
 On Vercel, simply import the repository and deploy.
 
 ## Fonts
