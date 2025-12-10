@@ -8,13 +8,56 @@
 ## Tech Stack
 
 - Next.js
+- React
 - Tailwind CSS
+- TypeScript
+
+## Running & Deployment
+
+### Download or clone the repository
+
+```bash
+git clone https://github.com/OctoBanon-Main/website.git
+cd website
+```
+
+> Or download the source code as a ZIP archive from GitHub.
+
+### Install dependencies
+
+```bash
+pnpm install
+```
+
+### Build for production
+
+```bash
+pnpm run build
+```
+
+### Start production server
+
+```bash
+pnpm start
+```
+
+### Deploy
+
+This project can be deployed on any platform that supports Next.js, including:
+
+- Vercel (recommended)
+- Netlify
+- Any Node.js hosting environment
+- Self-hosted VPS (Node.js server)
+
+The project does not require any special configuration for deployment.
+On Vercel, simply import the repository and deploy.
 
 ## Fonts
 
-- Adwaita Fonts
+- Adwaita Sans (part of GNOME Adwaita Fonts)
 
 ## License
 
 - Adwaita Fonts - Licensed under the [SIL Open Font License 1.1](https://gitlab.gnome.org/GNOME/adwaita-fonts/-/blob/main/LICENSE)
-- Source code - Licensed under the [GNU AGPLv3](https://github.com/OctoBanon-Main/website/blob/main/LICENSE).
+- Source code - Licensed under the [GNU AGPLv3](https://github.com/OctoBanon-Main/website/blob/main/LICENSE)
