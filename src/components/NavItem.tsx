@@ -12,7 +12,14 @@ export default function NavItem({ icon, href, text, isActive = false }: Props) {
     return (
         <Link
             href={href}
-            className={`flex items-center rounded-md text-sm font-bold flex-col md:flex-row h-[43px] md:h-[35px] w-[100px] md:w-[145px] justify-center transition-colors duration-200 hover:bg-[#39393C] select-none cursor-pointer gap-1 md:gap-2 ${isActive ? "bg-[#39393C]" : ""}`}
+            className={`
+                flex items-center rounded-md text-sm font-bold
+                flex-col md:flex-row h-[43px] md:h-[35px]
+                w-[100px] md:w-[145px] justify-center gap-1 md:gap-2
+                transition-colors duration-200 select-none cursor-pointer
+                hover:bg-[#39393C]
+                ${isActive ? "bg-[#39393C]" : ""}
+            `}
         >
             <Image
                 src={icon}
