@@ -20,4 +20,5 @@ export const FRIENDS = [
   { href: "https://patrickstar8753.github.io/", text: "cat8753" },
   { href: "https://shadowcj.rf.gd/", text: "ShadowCj" },
   { href: "https://tolya1337.ru/", text: "Tolya Gosuslugi" },
+  { href: "https://cat.tolya1337.ru/", text: "CatMpeg" },
 ];
