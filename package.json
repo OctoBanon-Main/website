@@ -3,13 +3,13 @@
   "description": "Personal website with information about me",
   "license": "AGPL-3.0-only",
   "version": "0.2.0",
-  "author": "Konstantin Zhigaylo <zero@kostyazero.com> (https://kostyazero.com/)",
+  "author": "Maksim Bengraf <me@octobanon.com> (https://octobanon.com/)",
   "contributors": [
     {
-      "name": "Maksim Bengraf",
-      "email": "me@octobanon.com",
-      "url": "https://octobanon.com/"
-    }
+      "name": "Konstantin Zhigaylo",
+      "email": "zero@kostyazero.com",
+      "url": "https://kostyazero.com/"
+      }
   ],
   "repository": {
     "type": "git",
