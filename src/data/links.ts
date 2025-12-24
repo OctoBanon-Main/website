@@ -9,7 +9,7 @@ export const SOCIALS = [
 export const CONTACTS = [
   { href: "mailto:me@octobanon.com", text: "E-Mail" },
   { href: "https://t.me/OctoBanon", text: "Telegram" },
-  { href: "https://matrix.to/#/@me:octobanon.com", text: "Matrix" },
+  { href: "https://matrix.to/#/@octo:octobanon.com", text: "Matrix" },
   { href: "https://discord.com/users/839947810735521792", text: "Discord" },
 ];
 
