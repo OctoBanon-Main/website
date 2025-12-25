@@ -15,7 +15,7 @@ export const CONTACTS = [
 
 export const FRIENDS = [
   { href: "https://kostyazero.com/", text: "kostya_zero" },
-  { href: "https://houl.floof.gay/", text: "Houl" },
+  { href: "https://houl.wtf/", text: "Houl" },
   { href: "https://honakac.github.io/", text: "HonakAC" },
   { href: "https://cat8753.ru/", text: "cat8753" },
   { href: "https://shadowcj.rf.gd/", text: "ShadowCj" },
