@@ -18,7 +18,7 @@ export const FRIENDS = [
   { href: "https://houl.wtf/", text: "Houl" },
   { href: "https://honakac.github.io/", text: "HonakAC" },
   { href: "https://cat8753.ru/", text: "cat8753" },
-  { href: "https://shadowcj.rf.gd/", text: "ShadowCj" },
+  { href: "https://shadowcj.site/", text: "ShadowCj" },
   { href: "https://tolya1337.ru/", text: "Tolya Gosuslugi" },
   { href: "https://cat.tolya1337.ru/", text: "CatMpeg" },
 ];
