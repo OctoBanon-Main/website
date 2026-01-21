@@ -1,9 +1,13 @@
 export const SOCIALS = [
   { href: "https://x.com/OctoBanon", text: "X" },
-  { href: "https://mastodon.ml/@octobanon", text: "Mastodon (RU)" },
   { href: "https://github.com/OctoBanon-Main", text: "GitHub" },
   { href: "https://steamcommunity.com/id/octobanon", text: "Steam" },
-  { href: "https://t.me/octobanon_place", text: "Telegram Channel (RU)" },
+];
+
+export const RU_SOCIALS = [
+  { href: "https://mastodon.ml/@octobanon", text: "Mastodon" },
+  { href: "https://t.me/octobanon_place", text: "Telegram Channel" },
+  { href: "https://shikimori.one/OctoBanon", text: "Shikimori" }
 ];
 
 export const CONTACTS = [

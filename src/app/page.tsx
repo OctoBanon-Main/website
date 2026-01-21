@@ -3,7 +3,7 @@ import Link from "next/link";
 import AboutMe from "@/components/AboutMe";
 import ListSection from "@/components/ListSection";
 
-import { SOCIALS, CONTACTS, FRIENDS } from "@/data/links";
+import { SOCIALS, RU_SOCIALS, CONTACTS, FRIENDS } from "@/data/links";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,9 +14,15 @@ export default function Home() {
         <AboutMe />
 
         <ListSection
-          title="Socials"
-          description="Here are all my social networks"
+          title="Socials (Global)"
+          description="Social networks focused on the English-speaking audience"
           items={SOCIALS}
+        />
+
+        <ListSection
+          title="Socials (RU)"
+          description="Social networks focused on the Russian-speaking audience"
+          items={RU_SOCIALS}
         />
 
         <ListSection
