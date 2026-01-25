@@ -1,5 +1,4 @@
 export const SOCIALS = [
-  { href: "https://x.com/OctoBanon", text: "X" },
   { href: "https://github.com/OctoBanon-Main", text: "GitHub" },
   { href: "https://steamcommunity.com/id/octobanon", text: "Steam" },
   { href: "https://www.last.fm/user/OctoBanon", text: "Last.fm" }
