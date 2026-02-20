@@ -7,7 +7,7 @@ export default function Projects() {
     <>
         <ListSection
             title="Projects"
-            description="Placeholder"
+            description="A collection of things I&apos;ve built and maintained."
             items={PROJECTS}
         />
     </>
