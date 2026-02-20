@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NotFound() {
     return (
-        <main className="h-screen w-full flex p-6 font-inter">
+        <main className="h-screen w-full flex p-6">
             <div className="m-auto flex flex-col text-center justify-center items-center gap-5">
                 <Image
                     src="/error.svg"

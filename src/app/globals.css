@@ -22,9 +22,6 @@
     :root {
         --background: hsl(240, 5.56%, 14.12%);
         --foreground: hsl(0, 0%, 100%);
-        --box-background: hsl(240, 3.77%, 20.78%);
-        --box-background-hover: hsl(240, 3.39%, 23.14%);
-        --navbar-bg: hsl(240, 2.56%, 22.94%);
     }
 }
 
