@@ -4,7 +4,3 @@ export const DONATE = [
   { text: "0xf1eD338AB63440B0D143c51674980BB84eA5f0a9", description: "Ethereum", copyable: true },
   { text: "TNFkT85i4CvhcN2NVkrE5NS1RyiXhkd4FV", description: "Tron", copyable: true }
 ];
-
-export const FIAT_DONATE = [
-  { text: "Example", description: "SBP" }
-];
