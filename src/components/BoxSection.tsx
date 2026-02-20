@@ -33,7 +33,7 @@ export default function BoxSection({ text, description, href, copyable }: BoxSec
 
             {copyable && (
                 <Image
-                    src={copied ? "/check.svg" : "/copy.svg"}
+                    src="/copy.svg"
                     alt="copy"
                     width={16}
                     height={16}
