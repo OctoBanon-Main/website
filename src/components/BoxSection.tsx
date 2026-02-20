@@ -24,12 +24,22 @@ export default function BoxSection({ text, description, href, copyable }: BoxSec
 
     const content = (
         <>
-            <div className="flex flex-col min-w-0 max-w-[70%]">
+            <div className="flex flex-col min-w-0 gap-0">
                 <span className="truncate">{text}</span>
                 {description && (
                     <span className="text-neutral-400 text-xs truncate">{description}</span>
                 )}
             </div>
+
+            {copyable && (
+                <Image
+                    src={copied ? "/check.svg" : "/copy.svg"}
+                    alt="copy"
+                    width={16}
+                    height={16}
+                    className="mr-1 shrink-0 transition-opacity duration-150"
+                />
+            )}
 
             {href && (
                 <Image src="/link.svg" alt="" width={16} height={16} className="mr-1 shrink-0" />
