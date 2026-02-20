@@ -60,4 +60,5 @@ On Vercel, simply import the repository and deploy.
 ## License
 
 - Adwaita Fonts - Licensed under the [SIL Open Font License 1.1](https://gitlab.gnome.org/GNOME/adwaita-fonts/-/blob/main/LICENSE)
+- Adwaita Icon Theme - Licensed under the [Creative Commons Attribution Share Alike 3.0 Unported](https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/blob/master/COPYING)
 - Source code - Licensed under the [GNU AGPLv3](https://github.com/OctoBanon-Main/website/blob/main/LICENSE)
