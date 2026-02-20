@@ -24,7 +24,7 @@ export default function BoxSection({ text, description, href, copyable }: BoxSec
 
     const content = (
         <>
-            <div className="flex flex-col min-w-0 gap-0">
+            <div className="flex flex-col min-w-0 max-w-[70%]">
                 <span className="truncate">{text}</span>
                 {description && (
                     <span className="text-neutral-400 text-xs truncate">{description}</span>
