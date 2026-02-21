@@ -7,7 +7,7 @@ export const SOCIALS = [
 export const RU_SOCIALS = [
   { href: "https://mastodon.ml/@octobanon", text: "Mastodon" },
   { href: "https://t.me/octobanon_place", text: "Telegram Channel" },
-  { href: "https://shiki.one/OctoBanon", text: "Shikimori" }
+  { href: "https://shikimori.io/OctoBanon", text: "Shikimori" }
 ];
 
 export const CONTACTS = [
