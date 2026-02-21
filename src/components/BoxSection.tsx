@@ -20,7 +20,7 @@ export default function BoxSection({ text, description, href, copyable }: BoxSec
         setTimeout(() => setCopied(false), 2000);
     };
 
-    const className = "bg-[#333337] flex cursor-pointer hover:bg-[#39393D] transition-colors duration-150 flex-row justify-between text-[1em] items-center p-[16px] gap-3";
+    const className = "bg-[#333337] flex cursor-pointer hover:bg-[#39393D] transition-colors duration-150 flex-row justify-between text-[1em] items-center p-[16px] gap-3 h-[62px]";
 
     const content = (
         <>
