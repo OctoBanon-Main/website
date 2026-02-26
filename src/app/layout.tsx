@@ -3,8 +3,12 @@ import { adwaitaSans } from "../data/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://octobanon.com"),
     title: "OctoBanon's Website",
     description: "Personal website with information about me.",
+    openGraph: {
+        images: "/fof.gif"
+    }
 };
 
 export default function RootLayout({
