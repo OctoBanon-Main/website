@@ -1,12 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { adwaitaSans } from "../data/fonts";
 import "./globals.css";
+
+export const viewport: Viewport = {
+    themeColor: "#222226"
+}
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://octobanon.com"),
     title: "OctoBanon's Website",
     description: "Personal website with information about me.",
-    openGraph: {
+    twitter: {
+        card: "summary",
+        title: "OctoBanon's Website",
+        description: "Personal website with information about me.",
         images: "/fof.gif"
     }
 };
