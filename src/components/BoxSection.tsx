@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { showAdwToast } from "./AdwToast";
 
 export type BoxSectionProps = {
     text: string;
@@ -12,12 +12,11 @@ export type BoxSectionProps = {
 };
 
 export default function BoxSection({ text, description, href, copyable }: BoxSectionProps) {
-    const [copied, setCopied] = useState(false);
-
     const handleCopy = () => {
+        if (!copyable) return;
+
         navigator.clipboard.writeText(text);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
+        showAdwToast("Copied to clipboard");
     };
 
     const className = "bg-[#333337] flex cursor-pointer hover:bg-[#39393D] transition-colors duration-150 flex-row justify-between text-[1em] items-center p-[16px] gap-3 h-[62px]";

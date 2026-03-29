@@ -30,3 +30,31 @@ body {
     color: var(--foreground);
     font-family: var(--font-adwaita-sans), Helvetica, sans-serif;
 }
+
+[data-sonner-toast] {
+  --y: 0 !important;
+  --offset: 32px !important;
+  transform: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: opacity 0.2s ease !important;
+}
+
+[data-sonner-toast][data-mounted="true"] {
+  animation: adw-fade-in 0.2s ease-out forwards;
+}
+
+[data-sonner-toast][data-removed="true"] {
+  animation: adw-fade-out 0.15s ease-in forwards !important;
+}
+
+@keyframes adw-fade-in {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes adw-fade-out {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.98); }
+}
