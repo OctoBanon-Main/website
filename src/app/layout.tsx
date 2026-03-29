@@ -3,7 +3,7 @@ import { adwaitaSans } from "../data/fonts";
 import "./globals.css";
 
 export const viewport: Viewport = {
-    themeColor: "#222226"
+    themeColor: "hsl(240, 5.56%, 14.12%)"
 }
 
 export const metadata: Metadata = {

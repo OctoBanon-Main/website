@@ -21,13 +21,13 @@ export function showAdwToast(message: string) {
 
 function AdwToast({ id, message }: AdwToastProps) {
     return (
-        <div className="flex items-center justify-between min-w-[300px] bg-black text-white px-6 py-4 rounded-full border border-white/10 gap-4 pointer-events-auto shadow-none">
+        <div className="flex items-center justify-between min-w-[300px] bg-(--toast) text-white px-6 py-4 rounded-full gap-4 pointer-events-auto shadow-none">
             <span className="text-sm font-medium leading-none select-none">
                 {message}
             </span>
 
             <button
-                className="shrink-0 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity outline-none cursor-pointer"
+                className="shrink-0 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
                 onClick={() => sonnerToast.dismiss(id)}
             >
                 <Image
