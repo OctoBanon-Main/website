@@ -3,7 +3,7 @@
 :root {
     --background: hsl(240, 5.56%, 14.12%);
     --foreground: hsl(0, 0%, 100%);
-    --toast: hsla(240, 2%, 32%, 0.85);
+    --toast: hsla(0, 0%, 0%, 0.60);
 }
 
 @theme inline {
