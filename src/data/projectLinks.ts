@@ -5,7 +5,7 @@ export const PROJECTS = [
         href: "https://github.com/OctoBanon-Main/rustyfuck",
     },
     {
-        text: "ZigZag",
+        text: "ZigZag Alloc",
         description: "A collection of explicit memory allocators and collections inspired by Zig",
         href: "https://github.com/OctoBanon-Main/zigzag",
     },
