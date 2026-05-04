@@ -21,8 +21,8 @@ export const FRIENDS = [
   { href: "https://kostyazero.com/", text: "kostya_zero" },
   { href: "https://houl.wtf/", text: "Houl" },
   { href: "https://honakac.github.io/", text: "HonakAC" },
-  { href: "https://cat8753.ru/", text: "cat8753" },
   { href: "https://shadowcj.site/", text: "ShadowCj" },
-  { href: "https://tolya1337.ru/", text: "Tolya Gosuslugi" },
-  { href: "https://cat.fs.tlpteam.ru/", text: "xelframe" }
+  { href: "https://cat8753.ru/", text: "cat8753" },
+  { href: "https://cat.fs.tlpteam.ru/", text: "xelframe" },
+  { href: "https://tolya1337.ru/", text: "Tolya Gosuslugi" }
 ];
