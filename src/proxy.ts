@@ -23,3 +23,9 @@ export function proxy(req: NextRequest) {
     return NextResponse.redirect(new URL("/unsupported-browser", req.url));
     }
 }
+
+export const config = {
+  matcher: [
+    "/((?!unsupported-browser|_next/static|_next/image|favicon.ico).*)",
+  ],
+};
