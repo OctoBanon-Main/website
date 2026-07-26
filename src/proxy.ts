@@ -3,6 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 export function proxy(req: NextRequest) {
     const ua = req.headers.get("user-agent") ?? "";
 
+    if (/MSIE|Trident\//.test(ua)) {
+    return NextResponse.redirect(new URL("/unsupported-browser", req.url));
+    }
+
     const chrome = ua.match(/Chrome\/(\d+)/);
     const firefox = ua.match(/Firefox\/(\d+)/);
     const safari = ua.match(/Version\/(\d+).+Safari/);
