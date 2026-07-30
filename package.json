@@ -3,11 +3,11 @@
   "description": "Personal website with information about me",
   "license": "AGPL-3.0-only",
   "version": "0.9.0",
-  "author": "Maksim Bengraf <me@octobanon.com> (https://octobanon.com/)",
+  "author": "Maksim Bengraf <octobanon@proton.me> (https://octobanon.com/)",
   "contributors": [
     {
       "name": "Konstantin Zhigaylo",
-      "email": "zero@kostyazero.com",
+      "email": "kostyazero@proton.me",
       "url": "https://kostyazero.com/"
     }
   ],
