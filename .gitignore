@@ -42,3 +42,6 @@ next-env.d.ts
 
 # pnpm-lock
 pnpm-lock.yaml
+
+# .codegraph
+/.codegraph
