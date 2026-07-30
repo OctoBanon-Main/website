@@ -1,27 +1,40 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse, userAgent } from "next/server";
 
-export function proxy(req: NextRequest) {
-    const ua = req.headers.get("user-agent") ?? "";
+const MIN_BROWSER_VERSIONS: Readonly<Record<string, number>> = {
+  Chrome: 120,
+  Firefox: 120,
+  Edge: 120,
+  Safari: 17,
+};
 
-    if (/MSIE|Trident\//.test(ua)) {
-    return NextResponse.redirect(new URL("/unsupported-browser", req.url));
-    }
+const UNSUPPORTED_BROWSER_PATH = "/unsupported-browser";
 
-    const chrome = ua.match(/Chrome\/(\d+)/);
-    const firefox = ua.match(/Firefox\/(\d+)/);
-    const safari = ua.match(/Version\/(\d+).+Safari/);
-    const edge = ua.match(/Edg\/(\d+)/);
+export function proxy(request: NextRequest) {
+  const { browser, isBot } = userAgent(request);
 
-    let supported = false;
+  if (isBot) {
+    return NextResponse.next();
+  }
 
-    if (chrome) supported = Number(chrome[1]) >= 120;
-    else if (firefox) supported = Number(firefox[1]) >= 120;
-    else if (edge) supported = Number(edge[1]) >= 120;
-    else if (safari) supported = Number(safari[1]) >= 17;
+  const browserName = browser.name;
+  const browserVersion = Number.parseInt(browser.major ?? "", 10);
 
-    if (!supported) {
-    return NextResponse.redirect(new URL("/unsupported-browser", req.url));
-    }
+  const minimumVersion = browserName
+    ? MIN_BROWSER_VERSIONS[browserName]
+    : undefined;
+
+  const isSupported =
+    minimumVersion !== undefined &&
+    Number.isFinite(browserVersion) &&
+    browserVersion >= minimumVersion;
+
+  if (isSupported) {
+    return NextResponse.next();
+  }
+
+  return NextResponse.redirect(
+    new URL(UNSUPPORTED_BROWSER_PATH, request.url),
+  );
 }
 
 export const config = {
