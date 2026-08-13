@@ -5,7 +5,8 @@ const MIN_BROWSER_VERSIONS: Readonly<Record<string, number>> = {
   Firefox: 120,
   Edge: 120,
   Safari: 17,
-  YaBrowser: 24
+  YaBrowser: 24,
+  Opera: 106,
 };
 
 const UNSUPPORTED_BROWSER_PATH = "/unsupported-browser";
