@@ -2,7 +2,7 @@
   "name": "octobanon-website",
   "description": "Personal website with information about me",
   "license": "AGPL-3.0-only",
-  "version": "0.11.4",
+  "version": "0.12.0",
   "author": "Maksim Bengraf <octobanon@proton.me> (https://octobanon.com/)",
   "contributors": [
     {
@@ -23,7 +23,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.3.0",
+    "next": "16.3.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "sonner": "^2.0.8"
@@ -35,7 +35,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "eslint": "^10.8.1",
-    "eslint-config-next": "16.3.0",
+    "eslint-config-next": "16.3.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2"
   },
