@@ -8,9 +8,14 @@ type Props = {
     isActive?: boolean;
 };
 
-export default function NavItem({ icon, href, text, isActive = false }: Props) {
+export default function NavItem({
+    icon,
+    href,
+    text,
+    isActive = false,
+}: Props) {
     return (
-        <li>
+        <li className="contents">
             <Link
                 href={href}
                 className={`
