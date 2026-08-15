@@ -18,31 +18,24 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const ua = request.headers.get("user-agent") ?? "";
-  const yandexMatch = ua.match(/YaBrowser\/(\d+)/i);
+  const name = browser.name ?? "";
+  const normalizedName =
+    name === "Mobile Safari"
+      ? "Safari"
+      : name.includes("Chrome")
+        ? "Chrome"
+        : name.includes("Firefox")
+          ? "Firefox"
+          : name.includes("Edge")
+            ? "Edge"
+            : name.includes("Opera")
+              ? "Opera"
+              : name.includes("Samsung")
+                ? "Chrome"
+                : name;
 
-  const browserName =
-    yandexMatch
-      ? "YaBrowser"
-      : browser.name === "Mobile Safari"
-        ? "Safari"
-        : browser.name;
-
-  if (!browserName) {
-    return NextResponse.redirect(
-      new URL(UNSUPPORTED_BROWSER_PATH, request.url),
-    );
-  }
-
-  const safariVersionMatch = ua.match(/Version\/(\d+(?:\.\d+)?)/i);
-
-  const browserVersion = yandexMatch
-    ? Number.parseInt(yandexMatch[1], 10)
-    : Number.parseInt(
-        browser.version ?? safariVersionMatch?.[1] ?? "",
-        10,
-      );
-
+  const browserName = name === "YaBrowser" ? "YaBrowser" : normalizedName;
+  const browserVersion = Number.parseInt(browser.version ?? "", 10);
   const minimumVersion = MIN_BROWSER_VERSIONS[browserName];
 
   const isSupported =
