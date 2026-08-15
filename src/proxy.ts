@@ -21,7 +21,15 @@ export function proxy(request: NextRequest) {
   const ua = request.headers.get("user-agent") ?? "";
   const yandexMatch = ua.match(/YaBrowser\/(\d+)/i);
 
-  const browserName = yandexMatch ? "YaBrowser" : browser.name;
+  const mobileSafariMatch = ua.match(
+    /Version\/(\d+(?:\.\d+)?) .*Mobile\/.*Safari\//i,
+  );
+
+  const browserName = yandexMatch
+    ? "YaBrowser"
+    : mobileSafariMatch
+      ? "Safari"
+      : browser.name;
 
   if (!browserName) {
     return NextResponse.redirect(
@@ -31,7 +39,9 @@ export function proxy(request: NextRequest) {
 
   const browserVersion = yandexMatch
     ? Number.parseInt(yandexMatch[1], 10)
-    : Number.parseInt(browser.major ?? "", 10);
+    : mobileSafariMatch
+      ? Number.parseInt(mobileSafariMatch[1], 10)
+      : Number.parseInt(browser.major ?? "", 10);
 
   const minimumVersion = MIN_BROWSER_VERSIONS[browserName];
 
