@@ -1,6 +1,7 @@
 import BoxSection from "./BoxSection";
 
 type ListItem = {
+  id?: string;
   text: string;
   description?: string;
   href?: string;
@@ -24,7 +25,7 @@ export default function ListSection({ title, description, items }: ListSectionPr
 
       <ul className="list-none mt-1.5 rounded-xl overflow-hidden">
         {items.map((item) => (
-          <li key={item.href ?? item.text} className="border-b border-b-[#212125] last:border-none">
+          <li key={item.id ?? item.href ?? `${item.text}-${item.description}`} className="border-b border-b-[#212125] last:border-none">
             <BoxSection
               href={item.href}
               text={item.text}
