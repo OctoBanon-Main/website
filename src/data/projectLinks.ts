@@ -9,5 +9,10 @@ export const PROJECTS = [
         description: "A collection of explicit memory allocators and collections inspired by Zig",
         href: "https://github.com/OctoBanon-Main/zigzag",
     },
+    {
+        text: "RPAK",
+        description: "A archive format and asset packaging library",
+        href: "https://github.com/OctoBanon-Main/rasen-archive",
+    },
     { text: "Homepage", description: "This website where you are", href: "https://github.com/OctoBanon-Main/website" },
 ];
