@@ -10,7 +10,7 @@ export const PROJECTS = [
         href: "https://github.com/OctoBanon-Main/zigzag",
     },
     {
-        text: "RPAK",
+        text: "Rasen Archive",
         description: "A archive format and asset packaging library",
         href: "https://github.com/OctoBanon-Main/rasen-archive",
     },
