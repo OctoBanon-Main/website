@@ -2,7 +2,7 @@
   "name": "octobanon-website",
   "description": "Personal website with information about me",
   "license": "AGPL-3.0-only",
-  "version": "0.12.6",
+  "version": "0.12.7",
   "author": "Maksim Bengraf <octobanon@proton.me> (https://octobanon.com/)",
   "contributors": [
     {
