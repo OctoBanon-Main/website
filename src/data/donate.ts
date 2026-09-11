@@ -33,6 +33,5 @@ export const DONATE = [
 
 export const FIAT_DONATE = [
   { text: "DonationAlerts", href: "https://www.donationalerts.com/r/octobanon" },
-  { text: "DonatePay", href: "https://new.donatepay.ru/en/@OctoBanon" },
-  { text: "Boosty", href: "https://boosty.to/octobanon" }
+  { text: "DonatePay", href: "https://new.donatepay.ru/en/@OctoBanon" }
 ]
