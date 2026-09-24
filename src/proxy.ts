@@ -5,7 +5,6 @@ const MIN_BROWSER_VERSIONS: Readonly<Record<string, number>> = {
   Firefox: 120,
   Edge: 120,
   Safari: 17,
-  YaBrowser: 24,
   Opera: 106,
 };
 
@@ -34,9 +33,8 @@ export function proxy(request: NextRequest) {
                 ? "Chrome"
                 : name;
 
-  const browserName = name === "YaBrowser" ? "YaBrowser" : normalizedName;
   const browserVersion = Number.parseInt(browser.version ?? "", 10);
-  const minimumVersion = MIN_BROWSER_VERSIONS[browserName];
+  const minimumVersion = MIN_BROWSER_VERSIONS[normalizedName];
 
   const isSupported =
     minimumVersion !== undefined &&

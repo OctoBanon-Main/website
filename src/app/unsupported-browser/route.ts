@@ -95,7 +95,7 @@ const html = `<!doctype html>
       <h1>Oh.</h1>
 
       <p>
-        It looks like your browser isn't supported. Please update it or use a modern browser to continue.
+        It looks like your browser isn't supported. Please update it or use a modern browser to continue. (And yes, this includes Yandex Browser. Do yourself a favor and switch to a real browser instead of using that dumpster fire)
       </p>
 
       <a href="https://browsehappy.com/">
