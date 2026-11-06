@@ -26,19 +26,19 @@ cd website
 ### Install dependencies
 
 ```bash
-pnpm install
+bun install
 ```
 
 ### Build for production
 
 ```bash
-pnpm run build
+bun run build
 ```
 
 ### Start production server
 
 ```bash
-pnpm start
+bun start
 ```
 
 ### Deploy
