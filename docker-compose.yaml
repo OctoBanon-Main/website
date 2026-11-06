@@ -1,0 +1,37 @@
+
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: octobanon-website:latest
+    pull_policy: build
+    container_name: octobanon-website
+
+    restart: unless-stopped
+
+    ports:
+      - "127.0.0.1:3000:3000"
+
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+
+    init: true
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
+
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "require('http').get('http://127.0.0.1:3000/', r => { r.resume(); process.exit(r.statusCode < 500 ? 0 : 1) }).on('error', () => process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
