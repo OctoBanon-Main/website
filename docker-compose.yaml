@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: octobanon-website:latest
+    pull_policy: build
     container_name: octobanon-website
 
     restart: unless-stopped
