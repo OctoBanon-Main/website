@@ -23,20 +23,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.4.2",
+    "next": "16.4.5",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "sonner": "^2.0.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.7",
-    "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^26.6.5",
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "eslint": "^10.13.0",
-    "eslint-config-next": "16.4.2",
-    "tailwindcss": "^4.3.3",
+    "eslint": "^10.14.0",
+    "eslint-config-next": "16.4.5",
+    "tailwindcss": "^4.3.4",
     "typescript": "^7.0.2"
   },
   "trustedDependencies": [
