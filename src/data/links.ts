@@ -1,7 +1,8 @@
 export const SOCIALS = [
   { href: "https://github.com/OctoBanon-Main", text: "GitHub" },
   { href: "https://steamcommunity.com/id/octobanon", text: "Steam" },
-  { href: "https://www.last.fm/user/OctoBanon", text: "Last.fm" }
+  { href: "https://www.last.fm/user/OctoBanon", text: "Last.fm" },
+  { href: "https://koito.octobanon.com/", text: "Koito (Music Scrobbler)" }
 ];
 
 export const RU_SOCIALS = [
