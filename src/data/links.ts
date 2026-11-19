@@ -1,13 +1,18 @@
 export const SOCIALS = [
   { href: "https://github.com/OctoBanon-Main", text: "GitHub" },
   { href: "https://steamcommunity.com/id/octobanon", text: "Steam" },
-  { href: "https://www.last.fm/user/OctoBanon", text: "Last.fm" },
-  { href: "https://koito.octobanon.com/", text: "Koito (Music Scrobbler)" }
+
 ];
 
 export const RU_SOCIALS = [
   { href: "https://mastodon.ml/@octobanon", text: "Mastodon" },
   { href: "https://shikimori.io/OctoBanon", text: "Shikimori" }
+];
+
+export const SCROBBLERS = [
+  { href: "https://koito.octobanon.com/", text: "Koito" },
+  { href: "https://www.last.fm/user/OctoBanon", text: "Last.fm" },
+  { href: "https://listenbrainz.org/user/OctoBanon/", text: "ListenBrainz" }
 ];
 
 export const CONTACTS = [
